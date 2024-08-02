@@ -27,7 +27,7 @@ export function AboutHome() {
           <div className="h-full flex flex-col justify-center">
             <Zoom>
               <h2 className="text-3xl md:text-2xl lg:text-3xl mb-5 lg:mb-12 font-italiana">
-                About Us
+                About <span className="text-[#8D835E]">Us</span>
               </h2>
             </Zoom>
             <Slide direction="right">

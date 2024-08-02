@@ -8,16 +8,18 @@ import { Welcome } from "@/components/home/Welcome";
 
 export default function Home() {
   return (
-    <main className="container">
+    <main>
       <Hero image="/fork.png" firstText="Az" lastText="Uro" />
       <Welcome />
-      <Features />
-      <AboutHome />
-      <SectionTitle title="The selected menu More great meals await you inside Azzuro Restaurant" />
-      <MenuItem name="appetizers" />
-      <MenuItem name="pasta" reverse={true} />
-      <MenuItem name="pizza" />
-      <MenuItem name="dessert" reverse={true} />
+      <div className="container">
+        <Features />
+        <AboutHome />
+        <SectionTitle title="The selected menu More great meals await you inside Azzuro Restaurant" />
+        <MenuItem name="appetizers" />
+        <MenuItem name="pasta" reverse={true} />
+        <MenuItem name="pizza" />
+        <MenuItem name="dessert" reverse={true} />
+      </div>
       <Booking className="my-36" />
     </main>
   );
