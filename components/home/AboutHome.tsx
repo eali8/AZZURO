@@ -25,12 +25,12 @@ export function AboutHome() {
       <div className="flex-1">
         <div className="flex flex-col items-start h-full">
           <div className="h-full flex flex-col justify-center">
-            <Zoom>
+            <Zoom triggerOnce={true}>
               <h2 className="text-3xl md:text-2xl lg:text-3xl mb-5 lg:mb-12 font-italiana">
                 About <span className="text-[#8D835E]">Us</span>
               </h2>
             </Zoom>
-            <Slide direction="right">
+            <Slide direction="right" triggerOnce={true}>
               <p className="text-lg md:text-sm lg:text-lg font-montserrat leading-normal lg:leading-relaxed">
                 Finding a collaborator in the workplace -someone you
                 instinctively understand, share values and seek the same ideals
