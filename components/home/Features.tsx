@@ -3,18 +3,14 @@ import Image from "next/image";
 import SectionTitle from "../common/SectionTitle";
 import { Slide, Zoom } from "react-awesome-reveal";
 
-const titleContent = (
-  <>
-    We know how to make <br />
-    the best <span className="text-[#8D835E]">Italian food</span> in the city
-  </>
-);
-
 export function Features() {
   return (
     <div className="grid grid-cols-12 gap-4 xl:gap-x-24 mb-20">
       <div className="col-span-12">
-        <SectionTitle className="mt-28" title={titleContent} />
+      <SectionTitle
+          className="mt-28"
+          title="We know how to make <br/> the best <span class='text-[#8D835E]'> Italian food </span> in the city"
+        />
       </div>
       <div className="col-span-12 md:col-span-4">
         <Slide direction="left">
@@ -24,6 +20,8 @@ export function Features() {
             alt="Logo"
             width={0}
             height={0}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
             unoptimized
           />
           <p className="text-center my-2 font-montserrat">
@@ -39,6 +37,8 @@ export function Features() {
             alt="Logo"
             width={0}
             height={0}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
             unoptimized
           />
           <p className="text-center my-2 font-montserrat">
@@ -54,6 +54,8 @@ export function Features() {
             alt="Logo"
             width={0}
             height={0}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
             unoptimized
           />
           <p className="text-center my-2 font-montserrat">

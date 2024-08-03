@@ -13,9 +13,8 @@ export default function SectionTitle({
   return (
     <Zoom>
       <div className={`flex flex-col items-center my-16 ${className ?? ""}`}>
-        <h2 className="font-italiana text-2xl lg:text-3xl text-center sm:w-1/2 lg:w-1/3 mb-5">
-          {title}
-        </h2>
+        <h2 className="font-italiana text-2xl lg:text-3xl text-center sm:w-1/2 lg:w-1/3 mb-5"dangerouslySetInnerHTML={{ __html: title }}>
+               </h2>
         {subtitle && <p className="text-lg">{subtitle}</p>}
       </div>
     </Zoom>
