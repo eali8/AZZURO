@@ -30,14 +30,14 @@ export default function Reservation() {
     <div className="grid grid-cols-12 gap-5 py-36">
       <div className="col-span-12 sm:col-span-7">
         <div className="flex flex-col justify-between px-5">
-          <Zoom>
+          <Zoom triggerOnce={true}>
             <div className="flex flex-col items-center mb-20">
               <h2 className="font-italiana text-5xl text-center mb-5">
                 Make a <span className="text-leadLight">Reservation</span>
               </h2>
             </div>
           </Zoom>
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce={true}>
             <form
               id="reservationForm"
               className="border-2 px-10 py-16 font-montserrat"
@@ -156,7 +156,7 @@ export default function Reservation() {
       </div>
       <div className="col-span-12 sm:col-span-5">
         <div className="h-full flex items-center">
-          <Slide direction="right">
+          <Slide direction="right" triggerOnce={true}>
             <Image
               className="w-full h-auto my-auto"
               src={"/reservation_thumb.png"}

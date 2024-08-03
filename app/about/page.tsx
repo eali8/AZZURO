@@ -7,14 +7,14 @@ export default function About() {
   return (
     <div className="grid grid-cols-12 gap-5 py-24 bg-[url('/about_bg.png')] bg-no-repeat bg-center bg-contain">
       <div className="col-span-12">
-        <Zoom>
+        <Zoom triggerOnce={true}>
           <h2 className="font-montserrat font-bold text-7xl text-center mb-20">
             About <span className="text-leadLight">Azzuro</span>
           </h2>
         </Zoom>
       </div>
       <div className="col-span-12 lg:col-span-6 sm:mb-96">
-        <Slide direction="left">
+      <Slide direction="left" triggerOnce={true}>
           <div className="h-full flex items-center">
             <Image
               className="w-full h-auto"
@@ -30,7 +30,7 @@ export default function About() {
         </Slide>
       </div>
       <div className="col-span-10 lg:col-span-5 col-start-3 lg:col-start-8 mb-28">
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce={true}>
           <p className="relative lg:text-lg xl:text-xl font-montserrat leading-normal xl:leading-relaxed">
             <span className="absolute -left-10 sm:-left-20 top-0">01</span>
             In front of the house, Gallego maintains an inviting dining room
@@ -61,7 +61,7 @@ export default function About() {
       <div className="col-span-12 lg:col-span-6 bg-lead text-white p-5 mb-28">
         <div className="grid grid-cols-6">
           <div className="col-span-5 col-start-2">
-            <Slide direction="left">
+            <Slide direction="left"triggerOnce={true}>
               <p className="relative lg:text-lg xl:text-xl font-montserrat leading-normal xl:leading-relaxed">
                 <span className="absolute -left-10 sm:-left-20 top-0">01</span>
                 The menu is rooted in familiar dishes and Italian favorites but
@@ -92,7 +92,7 @@ export default function About() {
         </div>
       </div>
       <div className="col-span-12 lg:col-span-6 mb-28">
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce={true}>
           <div className="h-full flex items-center">
             <Image
               className="w-full h-auto"

@@ -5,7 +5,7 @@ import { Zoom } from "react-awesome-reveal";
 export default function Footer() {
   return (
     <footer className="container my-8">
-      <Zoom>
+      <Zoom triggerOnce={true}>
         <div className="flex justify-center lg:justify-between items-center lg:items-end flex-col lg:flex-row">
           <div className="flex-1">
             <p className="font-italiana text-center lg:text-left">

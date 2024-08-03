@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <div className="grid grid-cols-12 gap-5 py-36">
       <div className="col-span-12 sm:col-span-6">
-        <Slide direction="left" className="flex items-center h-full">
+        <Slide direction="left" className="flex items-center h-full" triggerOnce={true}>
           <Image
             className="w-full h-auto lg:h-full"
             src={"/contact_thumb.png"}
@@ -43,7 +43,7 @@ export default function Contact() {
       </div>
       <div className="col-span-12 sm:col-span-6 px-5 md:px-0">
         <div className="flex flex-col justify-between h-full">
-          <Zoom>
+          <Zoom triggerOnce={true}>
             <div className="flex flex-col items-center mb-20">
               <h2 className="font-italiana text-5xl text-center mb-5">
                 Contact
@@ -53,7 +53,7 @@ export default function Contact() {
               </p>
             </div>
           </Zoom>
-          <Slide direction="right">
+          <Slide direction="right" triggerOnce={true}>
             <form
               id="contactForm"
               className="border-2 px-2 md:px-10 py-16"

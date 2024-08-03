@@ -137,7 +137,7 @@ export default function MenuItem({
               !reverse && "sm:col-start-8"
             }`}
           >
-            <Zoom>
+            <Zoom triggerOnce={true}>
               <div className="flex flex-col items-center">
                 <Image
                   className="w-16 lg:w-24 h-auto"
@@ -163,7 +163,7 @@ export default function MenuItem({
         }`}
       >
         <div className="flex items-center h-full">
-          <Slide direction={!reverse ? "left" : "right"}>
+          <Slide direction={!reverse ? "left" : "right"} triggerOnce={true}>
             <Image
               className="w-full h-auto"
               src={
@@ -187,7 +187,7 @@ export default function MenuItem({
         } relative`}
       >
         <div>
-          <Fade direction={reverse ? "left" : "right"} cascade damping={0.1}>
+          <Fade direction={reverse ? "left" : "right"} cascade damping={0.1} triggerOnce={true}>
             <ul className=" last:border-b-2">
               {menuItems[name as keyof typeof menuItems].items
                 .slice(

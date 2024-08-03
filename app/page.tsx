@@ -14,7 +14,8 @@ export default function Home() {
       <div className="container">
         <Features />
         <AboutHome />
-        <SectionTitle title="The selected menu More great meals await you inside Azzuro Restaurant" />
+        <SectionTitle title="The selected menu <br /> 
+        More great meals await you <br /> inside <span class='text-[#8D835E]'>Azzuro </span> Restaurant" />
         <MenuItem name="appetizers" />
         <MenuItem name="pasta" reverse={true} />
         <MenuItem name="pizza" />

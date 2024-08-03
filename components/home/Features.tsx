@@ -13,7 +13,7 @@ export function Features() {
         />
       </div>
       <div className="col-span-12 md:col-span-4">
-        <Slide direction="left">
+        <Slide direction="left" triggerOnce={true}>
           <Image
             className="w-auto xl:w-full md:h-full mx-auto rounded-xl"
             src={"/food1.png"}
@@ -30,7 +30,7 @@ export function Features() {
         </Slide>
       </div>
       <div className="col-span-12 md:col-span-4">
-        <Zoom>
+        <Zoom triggerOnce={true}>
           <Image
             className="w-auto xl:w-full md:h-full mx-auto rounded-xl"
             src={"/food2.png"}
@@ -47,7 +47,7 @@ export function Features() {
         </Zoom>
       </div>
       <div className="col-span-12 md:col-span-4">
-        <Slide direction="right">
+        <Slide direction="right" triggerOnce={true}>
           <Image
             className="w-auto xl:w-full md:h-full mx-auto rounded-xl"
             src={"/food3.png"}

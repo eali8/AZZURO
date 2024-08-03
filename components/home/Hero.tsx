@@ -14,8 +14,8 @@ export default function Hero({
   return (
     <div className="container lg:h-[calc(100vh-64px)] flex justify-center items-center">
       <h1 className="font-montserrat font-extrabold italic text-5xl sm:text-7xl md:text-9xl xl:text-[240px] flex justify-around items-center uppercase">
-      <Slide direction="left"><span className="lg:mt-10">{firstText}</span></Slide>
-        <Zoom>
+      <Slide direction="left" triggerOnce={true}><span className="lg:mt-10">{firstText}</span></Slide>
+        <Zoom triggerOnce={true}>
           <Image
             className="w-auto h-[30vh] sm:h-[50vh] lg:h-[80vh] px-5"
             src={image}
@@ -27,7 +27,7 @@ export default function Hero({
             unoptimized
           />
         </Zoom>
-        <Slide direction="right"><span className="lg:mt-10">{lastText}</span></Slide>
+        <Slide direction="right" triggerOnce={true}><span className="lg:mt-10">{lastText}</span></Slide>
       </h1>
     </div>
   );

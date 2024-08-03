@@ -8,12 +8,12 @@ export function Welcome() {
       <div className="w-full lg:w-3/5 xl:w-full xl:flex-1">
         <div className="bg-lead text-white py-16 lg:py-0 xl:py-16 flex flex-col items-start h-full">
           <div className="container h-full flex flex-col justify-center">
-            <AttentionSeeker effect="headShake">
+            <AttentionSeeker effect="headShake" triggerOnce={true}>
               <h2 className="text-3xl lg:text-2xl xl:text-3xl mb-12 lg:mb-5 xl:mb-12 font-italiana">
                 Welcome to Azzuro Italian Kitchen
               </h2>
             </AttentionSeeker>
-            <Fade direction="left" delay={200}>
+            <Fade direction="left" delay={200} triggerOnce={true}>
               <p className="text-lg lg:text-sm xl:text-lg font-montserrat leading-normal xxl:leading-relaxed">
                 Celebrate a culinary journey through Italy with Azzuro Italian
                 Kitchen re-entry into the heart of Vancouver. The

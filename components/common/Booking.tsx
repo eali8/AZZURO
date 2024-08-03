@@ -4,10 +4,10 @@ import { Slide } from "react-awesome-reveal";
 
 export default function Booking({ className }: { className?: string }) {
   return (
-    <Slide direction="down">
+    <Slide direction="down" triggerOnce={true}>
       <div className={`flex flex-col items-center my-16 ${className ?? ""}`}>
         <h3 className="font-italiana text-2xl md:text-3xl text-center mb-5">
-          Call us and book your table for tonight
+        <span className="text-leadLight">Call us</span> and book your table for tonight.
         </h3>
         <Link
           href="/reservation"

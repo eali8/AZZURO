@@ -8,7 +8,7 @@ export function AboutHome() {
     <div className="flex flex-col-reverse md:flex-row">
       <div className="flex-1 items-center">
         <div className="h-full flex items-center">
-      <Slide direction="left">
+      <Slide direction="left" triggerOnce={true}>
           <Image
             className="w-auto md:w-full"
             src={"/about_fork.png"}

@@ -6,7 +6,7 @@ import { Slide, Zoom } from "react-awesome-reveal";
 export default function Story() {
   return (
     <>
-      <Zoom>
+      <Zoom triggerOnce={true}>
         <div className="h-[calc(100vh-64px)] pt-8">
           <Image
             className="w-full h-full"
@@ -22,7 +22,7 @@ export default function Story() {
       </Zoom>
       <div className="flex flex-col sm:flex-row lg:items-end sm:pb-16 lg:-mt-16">
         <div className="w-1/4 mt-5 sm:-mt-20 lg:-mt-20">
-          <Slide direction="left">
+          <Slide direction="left" triggerOnce={true}>
             <Image
               className="w-1/2 rounded-xl sm:rounded-none sm:w-full h-auto mx-auto"
               src={"/story_1.png"}
@@ -36,11 +36,11 @@ export default function Story() {
           </Slide>
         </div>
         <div className="w-2/4 m-10">
-          <Slide direction="up">
+          <Slide direction="up" triggerOnce={true}>
             <h2 className="font-italiana text-xl md:text-3xl py-2 md:py-8">
-              Our restaurant’s space
+              Our <span className="text-leadLight">restaurant’s </span> space
             </h2>
-            <p className="text-sm md:text-lg">
+            <p className="text-sm md:text-lg font-montserrat">
               Indulge in an exquisite dining experience at Azzuro. Our vibrant
               space in the heart of the city offers tantalizing flavors,
               impeccable service, and unforgettable moments. Join us for a taste
@@ -51,12 +51,12 @@ export default function Story() {
               prepared by our mixologists, or explore our extensive wine
               selection for the perfect pairing. <br />
               <br /> At Azzuro, we strive to create not just meals, but moments
-              to cherish—a true feast for the senses.
+              to cherish - a true feast for the senses.
             </p>
           </Slide>
         </div>
         <div className="w-1/4 sm:translate-y-1/2">
-          <Slide direction="right">
+          <Slide direction="right" triggerOnce={true}>
             <Image
               className="w-1/2 rounded-xl sm:rounded-none sm:w-full h-auto mx-auto"
               src={"/story_2.png"}
