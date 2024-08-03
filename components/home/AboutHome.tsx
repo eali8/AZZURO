@@ -32,9 +32,9 @@ export function AboutHome() {
             </Zoom>
             <Slide direction="right" triggerOnce={true}>
               <p className="text-lg md:text-sm lg:text-lg font-montserrat leading-normal lg:leading-relaxed">
-                Finding a collaborator in the workplace -someone you
+                Finding a collaborator in the workplace - someone you
                 instinctively understand, share values and seek the same ideals
-                as- is next to impossible in the restaurant industry. Yet that’s
+                 - is next to impossible in the restaurant industry. Yet that’s
                 just what happened when Pedrino Tellasol and Daniel Gallego
                 first worked together at Villa Del Lupo, one of Vancouver’s most
                 beloved Italian restaurants. Telassol hired Gallego in what
