@@ -67,7 +67,8 @@ export default function Header() {
             </div>
           </div>
           <ul className="hidden sm:flex items-center justify-between h-16 font-italiana">
-            <Slide triggerOnce={true}
+            <Slide 
+              // triggerOnce={true}
               direction="right"
               className="origin-left -rotate-45 -skew-x-[30deg] scale-75 opacity-0"
             >
@@ -81,7 +82,8 @@ export default function Header() {
                 <Link href={"/menu"}  className={`relative md:px-2 after:absolute ${router == "/menu" ? "after:w-full" : "after:w-0"} after:h-3/5 after:left-0 after:bottom-0 after:-z-10 after:bg-[#EBC981] after:hover:w-full after:duration-500`}>MENU</Link>
               </li>
             </Slide>
-            <Zoom triggerOnce={true}>
+            <Zoom>
+            {/* triggerOnce={true} */}
               <li>
                 <Link href={"/"} >
                   <Image 
@@ -96,7 +98,8 @@ export default function Header() {
                 </Link>
               </li>
             </Zoom>
-            <Slide triggerOnce={true}
+            <Slide 
+            // triggerOnce={true}
               direction="left"
               className="origin-right rotate-45 skew-x-[30deg] scale-75 opacity-0"
             >
